@@ -4,17 +4,17 @@ Dynabot is a multi-model chatbot that allows users to chat with large language m
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔥 Choose between **Groq** and **OpenAI** as model providers
-- 🧠 Enable/disable web search dynamically
-- 💬 Chat interface with message history
-- ⚡ Fast backend using FastAPI
-- 🎨 Clean and interactive frontend using Streamlit
+-  Choose between **Groq** and **OpenAI** as model providers
+-  Enable/disable web search dynamically
+-  Chat interface with message history
+-  Fast backend using FastAPI
+-  Clean and interactive frontend using Streamlit
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Frontend: **Streamlit**
 - Backend: **FastAPI**
