@@ -1,0 +1,11 @@
+streamlit
+langchain
+langchain_community
+langchain_groq
+langchain_openai
+python_dotenv
+langgraph 
+langchain_core
+fastapi
+
+# pip install -r requirement.txt
