@@ -1,5 +1,7 @@
 # 🤖 Dynabot — AI Chat Assistant
-
+Link : 
+https://dynabot-deep.streamlit.app/
+---
 Dynabot is a multi-model chatbot that allows users to chat with large language models like **LLaMA3** and **GPT-4o-mini**, with optional web search integration. It uses **Streamlit** for the frontend and **FastAPI** for the backend.
 
 ---
