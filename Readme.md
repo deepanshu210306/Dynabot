@@ -19,7 +19,7 @@ Dynabot is a multi-model chatbot that allows users to chat with large language m
 - Frontend: **Streamlit**
 - Backend: **FastAPI**
 - Models: **OpenAI, Groq**
-- Hosting: *Railway.app* (or Render / Local)
+- Hosting: **Render and Streamlit**
 
 ---
 
