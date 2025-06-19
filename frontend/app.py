@@ -42,12 +42,10 @@ for role, msg in st.session_state.chat_history:
 user_query = st.chat_input("Type your message...")
 
 if user_query:
-    # Display user message
     with st.chat_message("user"):
         st.markdown(user_query)
     st.session_state.chat_history.append(("user", user_query))
 
-    # Send request to FastAPI backend
     with st.chat_message("ai"):
         with st.spinner("Thinking..."):
             try:
@@ -58,9 +56,12 @@ if user_query:
                     "messages": [user_query],
                     "allow_search": allow_search
                 }
-                res = requests.post("https://dynabot-meao.onrender.com/", json=payload,timeout=30)
-                response = res.json()
-                st.markdown(response)
-                st.session_state.chat_history.append(("ai", response))
+                res = requests.post("https://dynabot-meao.onrender.com/chat", json=payload, timeout=30)
+                if res.status_code == 200:
+                    response = res.json()
+                    st.markdown(response)
+                    st.session_state.chat_history.append(("ai", response))
+                else:
+                    st.error(f"API Error: {res.status_code} - {res.text}")
             except Exception as e:
                 st.error(f"Error: {e}")
